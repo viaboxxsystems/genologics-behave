@@ -1,12 +1,11 @@
 from behave import *
 from login import * 
-
-import codecs
-import configparser
-import os 
+import sys 
+print(sys.path)
 from genologics.lims import * 
-from genologics import config
-from genologics import entities 
+from config import *
+from genologics.entities import *
+
 
 
 @then('check all containers')
